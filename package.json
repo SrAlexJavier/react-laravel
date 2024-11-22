@@ -22,6 +22,10 @@
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
-        "react-bootstrap": "^2.10.5"
+        "datatables.net-dt": "^2.1.8",
+        "datatables.net-react": "^1.0.0",
+        "react-bootstrap": "^2.10.5",
+        "react-data-table-component": "^7.6.2",
+        "styled-components": "^6.1.13"
     }
 }

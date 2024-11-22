@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #37456d;
+    margin-bottom: 30px;
+}
+
+.tile-content {
+    width: 95%;
+    height: 95%;
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.tile-content img {
+    margin-bottom:20px;
+}
+
+.tile p {
+    font-size: 17px;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tile:hover .tile-content {
+    background-color: #0056b3;
+    width: 100%;
+    height: 100%;
+}
+
+#proyectosTable thead {
+    background-color: #37456d !important; /* Color azul */
+    color: white; /* Texto blanco en los encabezados */
+    text-align: left;
+  }
