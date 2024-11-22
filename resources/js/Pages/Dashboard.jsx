@@ -1,35 +1,36 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
+import Tile from '@/Components/Tiles';
 
 export default function Dashboard() {
     return (
         <AuthenticatedLayout
             header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Dashboard
-                </h2>
+                <div className='flex justify-between'>
+
+                    <h2 className="text-xl font-semibold leading-tight text-gray-800">
+                        Sistema de Gestión Integrado
+                    </h2>
+
+
+                </div>
+
             }
         >
-            <Head title="Dashboard" />
-
-            <div className="py-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
-                        <div className="row d-flex justify-content-center">
-                            <div className="col col-12 col-lg-3 col-md-4 m-3">
-
-                                GESTIONAR PROYECTOS
-
-                            </div>
-                            <div className="col col-12 col-lg-3 col-md-4 m-3">
-
-                                GESTIONAR PROVEEDORES
-
-                            </div>
-                        </div>
-                    </div>
+            <Head title="ERP" />
+            <div className='container mt-4'>
+            <div className='row'>
+                <div className='col-4'>
+                    <Link href={route('project.index')} className='tile d-flex justify-content-center'>
+                        Proyectos
+                    </Link>
                 </div>
+
             </div>
+            </div>
+
+
+
         </AuthenticatedLayout>
     );
 }
